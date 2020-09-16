@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		889873932511A76A00D00DFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873922511A76A00D00DFE /* AppDelegate.m */; };
+		889873992511A76A00D00DFE /* PNGCompress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 889873972511A76A00D00DFE /* PNGCompress.xcdatamodeld */; };
+		8898739B2511A76B00D00DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8898739A2511A76B00D00DFE /* Assets.xcassets */; };
+		8898739E2511A76B00D00DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8898739C2511A76B00D00DFE /* Main.storyboard */; };
+		889873A12511A76B00D00DFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873A02511A76B00D00DFE /* main.m */; };
+		889873CF2511A79B00D00DFE /* ImageCompressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873B62511A79A00D00DFE /* ImageCompressionViewController.m */; };
+		889873D22511A79B00D00DFE /* ImageCompressionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873BC2511A79A00D00DFE /* ImageCompressionOperation.m */; };
+		889873D32511A79B00D00DFE /* ImageCompressionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889873C12511A79A00D00DFE /* ImageCompressionViewItem.xib */; };
+		889873D62511A79B00D00DFE /* DestinationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873C62511A79A00D00DFE /* DestinationButton.m */; };
+		889873D72511A79B00D00DFE /* ImageCompressionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873C72511A79A00D00DFE /* ImageCompressionViewItem.m */; };
+		889873DE2511A8CC00D00DFE /* pngquant in Resources */ = {isa = PBXBuildFile; fileRef = 889873DD2511A8CC00D00DFE /* pngquant */; };
+		889873E52511A8EF00D00DFE /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873E02511A8EF00D00DFE /* CheckmarkView.swift */; };
+		889873E62511A8EF00D00DFE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873E12511A8EF00D00DFE /* CustomButton.swift */; };
+		889873E72511A8EF00D00DFE /* CustomButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873E22511A8EF00D00DFE /* CustomButton+Util.swift */; };
+		889873E82511A8EF00D00DFE /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873E32511A8EF00D00DFE /* util.swift */; };
+		889873E92511A8EF00D00DFE /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873E42511A8EF00D00DFE /* CircularProgress.swift */; };
+		889873F02511AA9E00D00DFE /* NSTaskWithProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873EE2511AA9E00D00DFE /* NSTaskWithProgress.m */; };
+		889873F32511AAE000D00DFE /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 889873F12511AAE000D00DFE /* NSImage+Resize.m */; };
+		889874032511ABF600D00DFE /* MaterialProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873F62511ABF600D00DFE /* MaterialProgress.swift */; };
+		889874042511ABF600D00DFE /* ShootingStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873F72511ABF600D00DFE /* ShootingStars.swift */; };
+		889874052511ABF600D00DFE /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873F82511ABF600D00DFE /* Spinner.swift */; };
+		889874062511ABF600D00DFE /* RotatingArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873F92511ABF600D00DFE /* RotatingArc.swift */; };
+		889874072511ABF600D00DFE /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873FA2511ABF600D00DFE /* Rainbow.swift */; };
+		889874082511ABF600D00DFE /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873FB2511ABF600D00DFE /* Crawler.swift */; };
+		889874092511ABF600D00DFE /* IndeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873FC2511ABF600D00DFE /* IndeterminateAnimation.swift */; };
+		8898740A2511ABF600D00DFE /* ProgressUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873FD2511ABF600D00DFE /* ProgressUtils.swift */; };
+		8898740B2511ABF600D00DFE /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889873FF2511ABF600D00DFE /* CircularProgressView.swift */; };
+		8898740C2511ABF600D00DFE /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889874002511ABF600D00DFE /* ProgressBar.swift */; };
+		8898740D2511ABF600D00DFE /* DeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889874012511ABF600D00DFE /* DeterminateAnimation.swift */; };
+		8898740E2511ABF600D00DFE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889874022511ABF600D00DFE /* BaseView.swift */; };
+		D57B8F1BA6ED59D9C096EFC4 /* libPods-PNGCompress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A17E31D7980DA51BF0E090 /* libPods-PNGCompress.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51BFECCBB209FB5582AB560D /* Pods-PNGCompress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNGCompress.release.xcconfig"; path = "Target Support Files/Pods-PNGCompress/Pods-PNGCompress.release.xcconfig"; sourceTree = "<group>"; };
+		8898738E2511A76A00D00DFE /* PNGCompress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNGCompress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		889873912511A76A00D00DFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		889873922511A76A00D00DFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		889873982511A76A00D00DFE /* PNGCompress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PNGCompress.xcdatamodel; sourceTree = "<group>"; };
+		8898739A2511A76B00D00DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8898739D2511A76B00D00DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8898739F2511A76B00D00DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889873A02511A76B00D00DFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		889873A22511A76B00D00DFE /* PNGCompress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PNGCompress.entitlements; sourceTree = "<group>"; };
+		889873A92511A79A00D00DFE /* ImageCompressionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompressionViewController.h; sourceTree = "<group>"; };
+		889873B62511A79A00D00DFE /* ImageCompressionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompressionViewController.m; sourceTree = "<group>"; };
+		889873BB2511A79A00D00DFE /* ImageCompressionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompressionOperation.h; sourceTree = "<group>"; };
+		889873BC2511A79A00D00DFE /* ImageCompressionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompressionOperation.m; sourceTree = "<group>"; };
+		889873C02511A79A00D00DFE /* DestinationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationButton.h; sourceTree = "<group>"; };
+		889873C12511A79A00D00DFE /* ImageCompressionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCompressionViewItem.xib; sourceTree = "<group>"; };
+		889873C42511A79A00D00DFE /* ImageCompressionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompressionViewItem.h; sourceTree = "<group>"; };
+		889873C62511A79A00D00DFE /* DestinationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationButton.m; sourceTree = "<group>"; };
+		889873C72511A79A00D00DFE /* ImageCompressionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompressionViewItem.m; sourceTree = "<group>"; };
+		889873D92511A88D00D00DFE /* PNGCompress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNGCompress-Bridging-Header.h"; sourceTree = "<group>"; };
+		889873DD2511A8CC00D00DFE /* pngquant */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngquant; sourceTree = "<group>"; };
+		889873E02511A8EF00D00DFE /* CheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
+		889873E12511A8EF00D00DFE /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		889873E22511A8EF00D00DFE /* CustomButton+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomButton+Util.swift"; sourceTree = "<group>"; };
+		889873E32511A8EF00D00DFE /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		889873E42511A8EF00D00DFE /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		889873EE2511AA9E00D00DFE /* NSTaskWithProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTaskWithProgress.m; sourceTree = "<group>"; };
+		889873EF2511AA9E00D00DFE /* NSTaskWithProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTaskWithProgress.h; sourceTree = "<group>"; };
+		889873F12511AAE000D00DFE /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
+		889873F22511AAE000D00DFE /* NSImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Resize.h"; sourceTree = "<group>"; };
+		889873F62511ABF600D00DFE /* MaterialProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialProgress.swift; sourceTree = "<group>"; };
+		889873F72511ABF600D00DFE /* ShootingStars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootingStars.swift; sourceTree = "<group>"; };
+		889873F82511ABF600D00DFE /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		889873F92511ABF600D00DFE /* RotatingArc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatingArc.swift; sourceTree = "<group>"; };
+		889873FA2511ABF600D00DFE /* Rainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		889873FB2511ABF600D00DFE /* Crawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
+		889873FC2511ABF600D00DFE /* IndeterminateAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateAnimation.swift; sourceTree = "<group>"; };
+		889873FD2511ABF600D00DFE /* ProgressUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressUtils.swift; sourceTree = "<group>"; };
+		889873FF2511ABF600D00DFE /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		889874002511ABF600D00DFE /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		889874012511ABF600D00DFE /* DeterminateAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeterminateAnimation.swift; sourceTree = "<group>"; };
+		889874022511ABF600D00DFE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8D22F69B53C270BB9FB54B18 /* Pods-PNGCompress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNGCompress.debug.xcconfig"; path = "Target Support Files/Pods-PNGCompress/Pods-PNGCompress.debug.xcconfig"; sourceTree = "<group>"; };
+		E2A17E31D7980DA51BF0E090 /* libPods-PNGCompress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PNGCompress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8898738B2511A76A00D00DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57B8F1BA6ED59D9C096EFC4 /* libPods-PNGCompress.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		889873852511A76A00D00DFE = {
+			isa = PBXGroup;
+			children = (
+				889873902511A76A00D00DFE /* PNGCompress */,
+				8898738F2511A76A00D00DFE /* Products */,
+				FF02A608828A6C5F5C3F6C6D /* Pods */,
+				93CA380846FD46874C7E499A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8898738F2511A76A00D00DFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8898738E2511A76A00D00DFE /* PNGCompress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		889873902511A76A00D00DFE /* PNGCompress */ = {
+			isa = PBXGroup;
+			children = (
+				889873912511A76A00D00DFE /* AppDelegate.h */,
+				889873922511A76A00D00DFE /* AppDelegate.m */,
+				889873DC2511A8CC00D00DFE /* Library */,
+				889873BE2511A79A00D00DFE /* API */,
+				889873BA2511A79A00D00DFE /* Models */,
+				889873A82511A79A00D00DFE /* ViewControllers */,
+				889873BD2511A79A00D00DFE /* ViewModels */,
+				889873BF2511A79A00D00DFE /* Views */,
+				8898739A2511A76B00D00DFE /* Assets.xcassets */,
+				8898739C2511A76B00D00DFE /* Main.storyboard */,
+				8898739F2511A76B00D00DFE /* Info.plist */,
+				889873A02511A76B00D00DFE /* main.m */,
+				889873A22511A76B00D00DFE /* PNGCompress.entitlements */,
+				889873972511A76A00D00DFE /* PNGCompress.xcdatamodeld */,
+				889873D92511A88D00D00DFE /* PNGCompress-Bridging-Header.h */,
+			);
+			path = PNGCompress;
+			sourceTree = "<group>";
+		};
+		889873A82511A79A00D00DFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				889873A92511A79A00D00DFE /* ImageCompressionViewController.h */,
+				889873B62511A79A00D00DFE /* ImageCompressionViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		889873BA2511A79A00D00DFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				889873BB2511A79A00D00DFE /* ImageCompressionOperation.h */,
+				889873BC2511A79A00D00DFE /* ImageCompressionOperation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		889873BD2511A79A00D00DFE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		889873BE2511A79A00D00DFE /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		889873BF2511A79A00D00DFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				889873C02511A79A00D00DFE /* DestinationButton.h */,
+				889873C62511A79A00D00DFE /* DestinationButton.m */,
+				889873C42511A79A00D00DFE /* ImageCompressionViewItem.h */,
+				889873C72511A79A00D00DFE /* ImageCompressionViewItem.m */,
+				889873C12511A79A00D00DFE /* ImageCompressionViewItem.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		889873DC2511A8CC00D00DFE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				889873F22511AAE000D00DFE /* NSImage+Resize.h */,
+				889873F12511AAE000D00DFE /* NSImage+Resize.m */,
+				889873F42511ABF600D00DFE /* ProgressKit */,
+				889873ED2511AA9E00D00DFE /* NSTaskWithProgress */,
+				889873DF2511A8EF00D00DFE /* CircularProgress */,
+				889873DD2511A8CC00D00DFE /* pngquant */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		889873DF2511A8EF00D00DFE /* CircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				889873E02511A8EF00D00DFE /* CheckmarkView.swift */,
+				889873E12511A8EF00D00DFE /* CustomButton.swift */,
+				889873E22511A8EF00D00DFE /* CustomButton+Util.swift */,
+				889873E32511A8EF00D00DFE /* util.swift */,
+				889873E42511A8EF00D00DFE /* CircularProgress.swift */,
+			);
+			path = CircularProgress;
+			sourceTree = "<group>";
+		};
+		889873ED2511AA9E00D00DFE /* NSTaskWithProgress */ = {
+			isa = PBXGroup;
+			children = (
+				889873EE2511AA9E00D00DFE /* NSTaskWithProgress.m */,
+				889873EF2511AA9E00D00DFE /* NSTaskWithProgress.h */,
+			);
+			path = NSTaskWithProgress;
+			sourceTree = "<group>";
+		};
+		889873F42511ABF600D00DFE /* ProgressKit */ = {
+			isa = PBXGroup;
+			children = (
+				889873F52511ABF600D00DFE /* InDeterminate */,
+				889873FD2511ABF600D00DFE /* ProgressUtils.swift */,
+				889873FE2511ABF600D00DFE /* Determinate */,
+				889874022511ABF600D00DFE /* BaseView.swift */,
+			);
+			path = ProgressKit;
+			sourceTree = "<group>";
+		};
+		889873F52511ABF600D00DFE /* InDeterminate */ = {
+			isa = PBXGroup;
+			children = (
+				889873F62511ABF600D00DFE /* MaterialProgress.swift */,
+				889873F72511ABF600D00DFE /* ShootingStars.swift */,
+				889873F82511ABF600D00DFE /* Spinner.swift */,
+				889873F92511ABF600D00DFE /* RotatingArc.swift */,
+				889873FA2511ABF600D00DFE /* Rainbow.swift */,
+				889873FB2511ABF600D00DFE /* Crawler.swift */,
+				889873FC2511ABF600D00DFE /* IndeterminateAnimation.swift */,
+			);
+			path = InDeterminate;
+			sourceTree = "<group>";
+		};
+		889873FE2511ABF600D00DFE /* Determinate */ = {
+			isa = PBXGroup;
+			children = (
+				889873FF2511ABF600D00DFE /* CircularProgressView.swift */,
+				889874002511ABF600D00DFE /* ProgressBar.swift */,
+				889874012511ABF600D00DFE /* DeterminateAnimation.swift */,
+			);
+			path = Determinate;
+			sourceTree = "<group>";
+		};
+		93CA380846FD46874C7E499A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A17E31D7980DA51BF0E090 /* libPods-PNGCompress.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF02A608828A6C5F5C3F6C6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D22F69B53C270BB9FB54B18 /* Pods-PNGCompress.debug.xcconfig */,
+				51BFECCBB209FB5582AB560D /* Pods-PNGCompress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8898738D2511A76A00D00DFE /* PNGCompress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889873A52511A76B00D00DFE /* Build configuration list for PBXNativeTarget "PNGCompress" */;
+			buildPhases = (
+				AEFF7F0902BAD3415CE658C0 /* [CP] Check Pods Manifest.lock */,
+				8898738A2511A76A00D00DFE /* Sources */,
+				8898738B2511A76A00D00DFE /* Frameworks */,
+				8898738C2511A76A00D00DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PNGCompress;
+			productName = PNGCompress;
+			productReference = 8898738E2511A76A00D00DFE /* PNGCompress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		889873862511A76A00D00DFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "BLACK DRAGON LAB";
+				TargetAttributes = {
+					8898738D2511A76A00D00DFE = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+				};
+			};
+			buildConfigurationList = 889873892511A76A00D00DFE /* Build configuration list for PBXProject "PNGCompress" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 889873852511A76A00D00DFE;
+			productRefGroup = 8898738F2511A76A00D00DFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8898738D2511A76A00D00DFE /* PNGCompress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8898738C2511A76A00D00DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889873D32511A79B00D00DFE /* ImageCompressionViewItem.xib in Resources */,
+				8898739B2511A76B00D00DFE /* Assets.xcassets in Resources */,
+				889873DE2511A8CC00D00DFE /* pngquant in Resources */,
+				8898739E2511A76B00D00DFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEFF7F0902BAD3415CE658C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PNGCompress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8898738A2511A76A00D00DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8898740E2511ABF600D00DFE /* BaseView.swift in Sources */,
+				889873E52511A8EF00D00DFE /* CheckmarkView.swift in Sources */,
+				889874072511ABF600D00DFE /* Rainbow.swift in Sources */,
+				889873F32511AAE000D00DFE /* NSImage+Resize.m in Sources */,
+				889873932511A76A00D00DFE /* AppDelegate.m in Sources */,
+				889873D72511A79B00D00DFE /* ImageCompressionViewItem.m in Sources */,
+				889873F02511AA9E00D00DFE /* NSTaskWithProgress.m in Sources */,
+				8898740D2511ABF600D00DFE /* DeterminateAnimation.swift in Sources */,
+				889873D62511A79B00D00DFE /* DestinationButton.m in Sources */,
+				889874092511ABF600D00DFE /* IndeterminateAnimation.swift in Sources */,
+				889874032511ABF600D00DFE /* MaterialProgress.swift in Sources */,
+				889873E72511A8EF00D00DFE /* CustomButton+Util.swift in Sources */,
+				889874062511ABF600D00DFE /* RotatingArc.swift in Sources */,
+				889873E82511A8EF00D00DFE /* util.swift in Sources */,
+				889873D22511A79B00D00DFE /* ImageCompressionOperation.m in Sources */,
+				889874042511ABF600D00DFE /* ShootingStars.swift in Sources */,
+				889873E92511A8EF00D00DFE /* CircularProgress.swift in Sources */,
+				889874082511ABF600D00DFE /* Crawler.swift in Sources */,
+				889873E62511A8EF00D00DFE /* CustomButton.swift in Sources */,
+				889873A12511A76B00D00DFE /* main.m in Sources */,
+				8898740A2511ABF600D00DFE /* ProgressUtils.swift in Sources */,
+				8898740C2511ABF600D00DFE /* ProgressBar.swift in Sources */,
+				889873992511A76A00D00DFE /* PNGCompress.xcdatamodeld in Sources */,
+				889873CF2511A79B00D00DFE /* ImageCompressionViewController.m in Sources */,
+				8898740B2511ABF600D00DFE /* CircularProgressView.swift in Sources */,
+				889874052511ABF600D00DFE /* Spinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8898739C2511A76B00D00DFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8898739D2511A76B00D00DFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		889873A32511A76B00D00DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		889873A42511A76B00D00DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		889873A62511A76B00D00DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D22F69B53C270BB9FB54B18 /* Pods-PNGCompress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PNGCompress/PNGCompress.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E23X83FMAX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PNGCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BLACK-DRAGON-LAB.PNGCompress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PNGCompress/PNGCompress-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		889873A72511A76B00D00DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BFECCBB209FB5582AB560D /* Pods-PNGCompress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PNGCompress/PNGCompress.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E23X83FMAX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PNGCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BLACK-DRAGON-LAB.PNGCompress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PNGCompress/PNGCompress-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		889873892511A76A00D00DFE /* Build configuration list for PBXProject "PNGCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889873A32511A76B00D00DFE /* Debug */,
+				889873A42511A76B00D00DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889873A52511A76B00D00DFE /* Build configuration list for PBXNativeTarget "PNGCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889873A62511A76B00D00DFE /* Debug */,
+				889873A72511A76B00D00DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		889873972511A76A00D00DFE /* PNGCompress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				889873982511A76A00D00DFE /* PNGCompress.xcdatamodel */,
+			);
+			currentVersion = 889873982511A76A00D00DFE /* PNGCompress.xcdatamodel */;
+			path = PNGCompress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 889873862511A76A00D00DFE /* Project object */;
+}
